@@ -1,42 +1,29 @@
 package com.driver;
 
-import java.util.Date;
+public class User {
+    private String name;
+    private String mobile;
 
-public class    Message {
-    private int id;
-    private String content;
-    private Date timestamp;
+    public User() {}
 
-    public Message() {}
-
-    public Message(int id, String content) {
-        this.id = id;
-        this.content = content;
-        this.timestamp = new Date();
+    public User(String name, String mobile) {
+        this.name = name;
+        this.mobile = mobile;
     }
 
-    public int getId() {
-        return id;
+    public String getName() {
+        return name;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getContent() {
-        return content;
+    public String getMobile() {
+        return mobile;
     }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public Date getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(Date timestamp) {
-        this.timestamp = timestamp;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 }
-
